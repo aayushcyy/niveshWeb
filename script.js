@@ -33,3 +33,33 @@ function responsiveFnc2() {
 
 window.addEventListener("resize", responsiveFnc2);
 window.addEventListener("load", responsiveFnc2);
+
+// nav hover effect code
+
+// script.js
+document.addEventListener("DOMContentLoaded", () => {
+  const navItems = document.querySelectorAll(".nav-item");
+
+  navItems.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      navItems.forEach((i) => {
+        if (i !== item) {
+          i.classList.add("dimmed");
+        }
+      });
+    });
+
+    item.addEventListener("mouseleave", () => {
+      navItems.forEach((i) => {
+        i.classList.remove("dimmed");
+      });
+    });
+  });
+});
+
+// scmoothscrolling locomotive js
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector(".main"),
+  smooth: true,
+});

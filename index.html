@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nivesh-home</title>
+    <link rel="stylesheet" href="loco.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,14 +25,14 @@
         <div class="nav">
           <div class="nav-p1"><img src="logo-wid-name.png" alt="" /></div>
           <div class="nav-p2">
-            <h5>Home</h5>
-            <h5>Service</h5>
-            <h5>Product</h5>
-            <h5>About us</h5>
+            <a class="nav-item" href="#"><h5>Home</h5></a>
+            <a class="nav-item" href="#"><h5>Service</h5></a>
+            <a class="nav-item" href="#"><h5>Product</h5></a>
+            <a class="nav-item" href="#"><h5>About us</h5></a>
           </div>
           <div class="nav-p3">
-            <h5>Login</h5>
-            <button>Sign up</button>
+            <a href="#"><h5>Login</h5></a>
+            <a href="#"><button>Sign up</button></a>
           </div>
           <i class="ri-menu-3-line"></i>
         </div>
@@ -53,7 +55,11 @@
           <div class="cta-btns">
             <button class="btn-1">How it works</button>
             <button class="btn-2">
-              Get app now <i class="ri-download-line"></i>
+              Get app now
+              <div class="btn-i-effect">
+                <i id="btn-i-2" class="ri-download-line"></i>
+                <i class="ri-download-line"></i>
+              </div>
             </button>
           </div>
           <img src="app-dashboard.png" alt="" class="dashboard-img" />
@@ -173,20 +179,24 @@
           app in Appstore or Playstore. Download now and feel the convenience!
         </h6>
         <div class="download-btn">
-          <div class="app-store">
-            <i class="ri-apple-fill"></i>
-            <div class="btn-detail">
-              <p>Download on the</p>
-              <h6>App Store</h6>
+          <a href="#">
+            <div class="app-store">
+              <i class="ri-apple-fill"></i>
+              <div class="btn-detail">
+                <p>Download on the</p>
+                <h6>App Store</h6>
+              </div>
             </div>
-          </div>
-          <div class="play-store">
-            <i class="ri-google-play-fill"></i>
-            <div class="btn-detail">
-              <p>GET IT ON</p>
-              <h6>Google Play</h6>
+          </a>
+          <a href="#"
+            ><div class="play-store">
+              <i class="ri-google-play-fill"></i>
+              <div class="btn-detail">
+                <p>GET IT ON</p>
+                <h6>Google Play</h6>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div class="footer">
@@ -194,11 +204,7 @@
           <a href="#page1">
             <img url=".page1" src="footer-logo.png" alt="" class="logo" />
           </a>
-          <a
-            target="_blank"
-            href="https://www.google.com/maps/place/Lauda,+Chhattisgarh+495330/@22.0666135,81.8299303,6147m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a283fc43d6a92c3:0xd8b4fcdf89ffc7c3!8m2!3d22.0649727!4d81.8497567!16s%2Fg%2F12hktwym6?entry=ttu"
-            class="add"
-          >
+          <a class="add">
             Technology Park 8-14, <br />
             Sector 8, Nava Raipur, <br />
             Chhattisgarh
@@ -208,6 +214,17 @@
           >
         </div>
         <div class="ftr-child" id="ftr-p2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118984.75566309405!2d81.57134746839083!3d21.260634253428865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dda23be28229%3A0x163ee1204ff9e240!2sRaipur%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1720676289617!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="ftr-child" id="ftr-p3">
           <div class="heading">Platform</div>
           <div class="list">
             <h6>Analitics</h6>
@@ -218,7 +235,7 @@
             <h6>Security</h6>
           </div>
         </div>
-        <div class="ftr-child" id="ftr-p3">
+        <div class="ftr-child" id="ftr-p4">
           <div class="heading">Resources</div>
           <div class="list">
             <h6>Customers</h6>
@@ -228,7 +245,7 @@
             <h6>Video & Podcast</h6>
           </div>
         </div>
-        <div class="ftr-child" id="ftr-p4">
+        <div class="ftr-child" id="ftr-p5">
           <div class="heading">Solutions</div>
           <div class="list">
             <h6>Financials</h6>
@@ -243,6 +260,7 @@
         <p><i class="ri-copyright-line"></i> 2024 copyright - Nivesh</p>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
